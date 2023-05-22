@@ -19,5 +19,10 @@ use App\Http\Controllers\DoctorControl;
 Route::get('/',[DoctorControl::class,'index']);
 Route::get('/doctor/doctor_create',[DoctorControl::class,'create']);
 Route::post('doctor/doctor_store',[DoctorControl::class,'store']);
+Route::get('doctor/doctor_view/{id}',[DoctorControl::class,'view']);
 
+
+Route::get('doctor/doctor_edit/{id}',[DoctorControl::class,'edit']);
+Route::post('doctor/doctor_update/{id}',[DoctorControl::class,'update']);
+Route::get('doctor/doctor_delete/{id}',[DoctorControl::class,'delete']);
 

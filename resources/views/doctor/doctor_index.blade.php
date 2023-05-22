@@ -41,15 +41,15 @@
         <td>{{ $val->address }}</td>
 
             @if( $val->status == 1 )
-                <td><label for="" style="color:green">Active</label></td>
+                <td><label for="" style="color:green">In Service</label></td>
             @else
-                <td><label for="" style="color:rgb(201, 10, 71)">In-Active</label></td>
+                <td><label for="" style="color:rgb(201, 10, 71)">Retired</label></td>
             @endif
 
         <td>
-            <a href="{{ url('customer/view') }}/{{ $val->id }}" class="btn btn-info">View </a>
-            <a href="{{ url('customer/edit') }}/{{ $val->id }}" class="btn btn-warning">Edit </a>
-            <a href="{{ url('customer/delete') }}/{{ $val->id }}" class="btn btn-danger">Delete </a>
+            <a href="{{ url('doctor/doctor_view') }}/{{ $val->id }}" class="btn btn-info">View </a>
+            <a href="{{ url('doctor/doctor_edit') }}/{{ $val->id }}" class="btn btn-warning">Edit </a>
+            <a href="{{ url('doctor/doctor_delete') }}/{{ $val->id }}" class="btn btn-danger">Delete </a>
         </td>
     </tr>
     @endforeach

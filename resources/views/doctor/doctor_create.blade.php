@@ -19,30 +19,47 @@
       <div class="col-sm-10">
         <input type="text" class="form-control" id="firstname" placeholder="Lex" name="firstname">
       </div>
+      @error('firstname')
+            <div class="alert" style="color:rgb(255, 0, 0)">{{ $message }}</div>
+        @enderror
     </div>
+
+
     <div class="form-group">
         <label class="control-label col-sm-2" for="lastname">Last Name:</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="lastname" placeholder="Luther" name="lastname">
         </div>
+        @error('lastname')
+            <div class="alert" style="color:rgb(255, 0, 0)">{{ $message }}</div>
+        @enderror
     </div>
     <div class="form-group">
         <label class="control-label col-sm-2" for="mobile">Mobile</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile">
         </div>
+        @error('mobile')
+            <div class="alert" style="color:rgb(255, 0, 0)">{{ $message }}</div>
+        @enderror
       </div>
     <div class="form-group">
         <label class="control-label col-sm-2" for="email">Email:</label>
         <div class="col-sm-10">
           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
         </div>
+        @error('email')
+            <div class="alert" style="color:rgb(255, 0, 0)">{{ $message }}</div>
+        @enderror
       </div>
     <div class="form-group">
         <label class="control-label col-sm-2" for="address">Address</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
         </div>
+        @error('address')
+            <div class="alert" style="color:rgb(255, 0, 0)">{{ $message }}</div>
+        @enderror
       </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
